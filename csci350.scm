@@ -15,7 +15,10 @@
           ((list? L)
            (if (number? (car L))
                (+ (sum-up-numbers-simple (cdr L)) (car L))
+               (+ (sum-up-numbers-simple (cdr L)) 0)
+           )
            )
           (else 0)
           )
   )
+
