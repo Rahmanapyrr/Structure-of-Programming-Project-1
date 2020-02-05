@@ -1,9 +1,9 @@
 
-(define (deep-reverse L)
+(define (deep-general L)
   (cond ((null? L) '())
         ((list? L)
-         (append (deep-reverse (cdr L))
-                 (list (deep-reverse (car L)))
+         (append (deep-general (cdr L))
+                 (list (deep-general (car L)))
                  )
          )
         (else L)
