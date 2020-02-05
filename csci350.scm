@@ -1,13 +1,16 @@
+;guile 2.0.11
+
 (define (deep-general L)
   (cond ((null? L) '())
         ((list? L)
          (append (deep-general (cdr L))
                  (list (deep-general (car L)))
                  )
-         )
+              )
         (else L)
-        )
+      )
   )
+
 
 (define (sum-up-numbers-simple L)
     (cond ((null? L) 0)
@@ -31,13 +34,10 @@
           (+ (car L) (sum-up-numbers-general (cdr L)))))
   )
   )
-          
-          
+
 
 (define (min-above-min L1 L2)
    (cond
        ((null? L1) #f) ;if L1 is empty, return false
- 
       )
 )
-
