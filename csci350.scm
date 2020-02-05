@@ -1,4 +1,3 @@
-
 (define (deep-general L)
   (cond ((null? L) '())
         ((list? L)
@@ -28,6 +27,10 @@
       0
       (if (list? (car L))
           (+ (sum-up-numbers-general (car L)) (sum-up-numbers-general (cdr L)))
+          (if (not(number?(car L))) (+ 0 (sum-up-numbers-general (cdr L)))
+          (+ (car L) (sum-up-numbers-general (cdr L)))))
+  )
+  )
           
           
 
