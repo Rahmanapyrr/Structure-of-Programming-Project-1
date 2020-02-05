@@ -22,3 +22,10 @@
           )
   )
 
+(define (min-above-min L1 L2)
+   (cond
+       ((null? L1) #f) ;if L1 is empty, return false
+ 
+      )
+)
+
