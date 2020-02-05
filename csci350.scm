@@ -22,6 +22,15 @@
           )
   )
 
+
+(define (sum-up-numbers-general L)
+  (if (null? L)
+      0
+      (if (list? (car L))
+          (+ (sum-up-numbers-general (car L)) (sum-up-numbers-general (cdr L)))
+          
+          
+
 (define (min-above-min L1 L2)
    (cond
        ((null? L1) #f) ;if L1 is empty, return false
